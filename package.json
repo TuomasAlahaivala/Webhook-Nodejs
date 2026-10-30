@@ -1,0 +1,25 @@
+{
+    "name":  "discogs-webhook",
+    "version":  "1.0.0",
+    "private":  true,
+    "type":  "module",
+    "scripts":  {
+                    "build":  "tsc",
+                    "start":  "node dist/api.js",
+                    "worker":  "node dist/worker.js",
+                    "migrate":  "node dist/migrate.js",
+                    "check":  "tsc --noEmit"
+                },
+    "dependencies":  {
+                         "bullmq":  "^5.0.0",
+                         "express":  "^5.0.0",
+                         "pg":  "^8.0.0",
+                         "dotenv":  "^16.0.0"
+                     },
+    "devDependencies":  {
+                            "typescript":  "^5.0.0",
+                            "@types/node":  "^24.0.0",
+                            "@types/express":  "^5.0.0",
+                            "@types/pg":  "^8.0.0"
+                        }
+}
